@@ -1,0 +1,16 @@
+html
+   head
+       title Hello!! 
+   body 
+      h1(style="color:green") DETAILS OF THE STUDENTS
+      table(border="2" cellpadding="10")
+        thead 
+              th Firstname 
+              th Email 
+              th Phone
+        each val in allstudents 
+            tr 
+                td #{val.firstname}
+                td #{val.email}
+                td #{val.phone}
+            
